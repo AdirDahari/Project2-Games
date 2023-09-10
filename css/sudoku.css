@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 2em sans-serif;
+  color: rgb(60, 60, 60);
+  text-align: center;
+  line-height: 2;
+  cursor: default;
+}
+
+.container-start {
+  margin: 150px auto;
+  width: 50vw;
+  height: 600px;
+  border-radius: 30px;
+  background-color: rgba(240, 225, 250, 0.733);
+}
+
+.container-start p {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.container-start .difficulty-list {
+  width: 100%;
+  padding-bottom: 200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.container-start .difficulty-list div {
+  font-size: 1.5rem;
+  width: 20%;
+  background-color: rgb(188, 194, 240);
+  border-radius: 15px;
+}
+
+.container-start .difficulty-list div:hover {
+  background-color: rgb(129, 140, 221);
+  box-shadow: 0px 0px 5px 5px #bdc3c7;
+}
+
+.container-game {
+  margin: 20px auto;
+  width: 55vw;
+  height: 900px;
+  background-color: rgba(240, 225, 250, 0.733);
+  border-radius: 20px;
+  display: none;
+}
+
+.bar {
+  width: 100%;
+  height: 100px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bar div {
+  width: 33%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.bar .pause-btn {
+  font-size: 1.5rem;
+  width: 100px;
+  height: 50px;
+  background-color: rgba(0, 38, 255, 0.541);
+  border-radius: 15px;
+}
+
+.bar .pause-btn:hover {
+  background-color: rgb(0, 119, 255);
+  box-shadow: 0px 0px 5px 5px #bdc3c7;
+}
+
+#board {
+  box-shadow: 0px 0px 5px 5px #bdc3c7;
+  margin: 0px auto;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 239, 245);
+}
+
+.cell {
+  width: 11.11%;
+  height: 11.11%;
+  background-color: rgb(218, 239, 245);
+  border: 1px solid #e2bebe88;
+  color: rgb(179, 88, 93);
+}
+
+.cell:hover {
+  background-color: rgb(178, 221, 233);
+  border: 1px solid #3c2ccf;
+}
+
+.active-cell {
+  border: 1px solid #2825e4;
+  box-shadow: 0px 0px 5px 5px #bdc3c7;
+}
+
+.active-cell:hover {
+  background-color: rgba(211, 190, 231, 0.233);
+  border: 1px solid #3c2ccf;
+  box-shadow: none;
+}
+
+.help-cells {
+  background-color: rgba(194, 189, 199, 0.233);
+}
+
+.constant-cell {
+  color: rgb(60, 60, 60);
+}
+
+.collection {
+  width: 600px;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+.collection div {
+  width: 11.11%;
+  height: 11.11%;
+  background-color: rgb(218, 221, 245);
+  border: 1px solid #e2bedc88;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translate(0, 0);
+  transition: 0.2s all ease-out;
+}
+
+.collection #clearBtn {
+  float: right;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.collection div:hover {
+  transform: translate(0, -10px);
+  transition: 0.2s all ease-out;
+}
+
+.container-pause {
+  color: #fff;
+  margin: 0px auto;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  margin: 100px auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  border: 5px solid #0415ff;
+  background-color: rgba(72, 30, 226, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  display: none;
+}
+
+.container-pause h2 {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.container-pause .div-pause-btn {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.container-pause .div-pause-btn div {
+  width: 150px;
+  height: 70px;
+  background-color: lightseagreen;
+  border-radius: 15px;
+  transition: 0.2s all ease-out;
+  font-size: 1.6rem;
+  line-height: 2.6;
+}
+
+.container-pause .div-pause-btn div:hover {
+  box-shadow: 0px 0px 10px 10px #bdc3c7;
+}
+
+.container-finish {
+  margin: 100px auto;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background-color: rgba(96, 98, 245, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  display: none;
+}
+
+.container-finish h2 {
+  margin: 50px;
+}
+
+.container-finish #mainMenuBtn {
+  margin: 50px auto;
+  width: 150px;
+  height: 70px;
+  background-color: lightseagreen;
+  border-radius: 15px;
+  transition: 0.2s all ease-out;
+  font-size: 1.6rem;
+  line-height: 2.6;
+}
+
+.container-finish #mainMenuBtn:hover {
+  box-shadow: 0px 0px 10px 10px #488bb8;
+}
+
+@media (max-width: 1200px) {
+  .container-start {
+    width: 70vw;
+  }
+  .container-start .difficulty-list div {
+    font-size: 1.1rem;
+    width: 25%;
+    padding: 5px;
+  }
+  .container-game {
+    width: 80vw;
+  }
+  .container-game .bar div {
+    font-size: 1.5rem;
+  }
+  .container-game .bar .pause-btn {
+    font-size: 1.2rem;
+  }
+  #board {
+    width: 550px;
+    height: 550px;
+  }
+  .collection {
+    font-size: 1.5rem;
+  }
+  .collection #clearBtn {
+    width: 65px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-start {
+    width: 90vw;
+  }
+  .container-game {
+    width: 100vw;
+  }
+  .container-game {
+    margin: 0;
+    width: 100vw;
+  }
+  .container-game .bar div {
+    width: 30%;
+    font-size: 1.3rem;
+  }
+  .container-game .bar .pause-btn {
+    font-size: 1.2rem;
+    width: 75px;
+  }
+  #board {
+    width: 450px;
+    height: 450px;
+    font-size: 1.3rem;
+  }
+  .collection {
+    width: 95%;
+  }
+  .container-pause {
+    width: 90vw;
+  }
+  .container-pause .div-pause-btn {
+    width: 90%;
+  }
+  .container-pause .div-pause-btn div {
+    font-size: 1.3rem;
+    line-height: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  #board {
+    width: 100vw;
+    height: 400px;
+    font-size: 1.3rem;
+  }
+}
