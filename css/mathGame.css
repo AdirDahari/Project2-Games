@@ -12,7 +12,7 @@ body {
 }
 
 .container-start {
-  width: 60vw;
+  width: 800px;
   height: 600px;
   background-color: #9e7676;
   text-align: center;
@@ -51,7 +51,7 @@ body {
 }
 
 .container-game {
-  width: 60vw;
+  width: 800px;
   height: 600px;
   border-radius: 15px;
   margin: 100px auto;
@@ -122,7 +122,7 @@ body {
 }
 
 .container-finish {
-  width: 60vw;
+  width: 800px;
   height: 600px;
   text-align: center;
   border-radius: 15px;
