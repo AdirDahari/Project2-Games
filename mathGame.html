@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/mathGame.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-start">
+        <h1>Math Quiz</h1>
+        <p>choose difficulty</p>
+        <div class="difficulty">
+          <div>Easy</div>
+          <div>Medium</div>
+          <div>Hard</div>
+        </div>
+      </div>
+      <div class="container-game">
+        <div><h1>Math Quiz</h1></div>
+        <div class="bar">
+          <p id="timer">Time: 3:00</p>
+          <p class="score">Score: 00</p>
+        </div>
+        <div class="question-div">
+          <p id="questionId">1 + 1 =</p>
+          <input id="inputId" type="text" />
+          <div id="sendBtn">Send</div>
+          <span id="refreshId" class="material-symbols-outlined">
+            refresh
+          </span>
+        </div>
+      </div>
+      <div class="container-finish">
+        <h1>Game Over</h1>
+        <p class="score">Score: 00</p>
+        <div class="finish-button">Main Menu</div>
+      </div>
+    </div>
+    <script src="./js/mathGame.js"></script>
+  </body>
+</html>

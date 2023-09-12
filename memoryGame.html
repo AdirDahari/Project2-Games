@@ -10,7 +10,8 @@
     <div class="container">
       <div class="bar">
         <h1>Memory Game</h1>
-        <p id="timer">time: 00:00</p>
+        <p class="timer">time: 00:00</p>
+        <div id="pauseBtn">Pause</div>
       </div>
       <div class="board">
         <div class="row">
@@ -38,10 +39,18 @@
           <div class="box"><img class="sponImg" src="" alt="" /></div>
         </div>
       </div>
+      <div class="container-pause" id="pauseDiv">
+        <h2>Pause</h2>
+        <div class="timer" id="timer">Time: 00:00</div>
+        <div class="div-pause-btn">
+          <div id="resumeBtn">Resume</div>
+          <div class="restartBtn">Restart</div>
+        </div>
+      </div>
       <div class="finish" id="finishDiv">
         <h2>Game Over</h2>
-        <p id="timer">Time to finish: 00:00</p>
-        <div class="restart-btn" id="restartBtn">Play Again</div>
+        <p class="timer">Time to finish: 00:00</p>
+        <div class="restart-btn restartBtn">Play Again</div>
       </div>
     </div>
     <script src="./js/memoryGame.js"></script>

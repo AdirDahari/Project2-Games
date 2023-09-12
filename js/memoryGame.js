@@ -14,6 +14,7 @@ const imgs = [
 let twoImg = [];
 let openCards = 0;
 let isGameOver = false;
+let isGamePause = false;
 let sec = 0;
 let min = 0;
 
@@ -39,12 +40,16 @@ const newGame = () => {
   for (let box of boxs) {
     box.firstChild.style.display = "none";
   }
+  let timer = document.querySelectorAll(".timer");
   let numsThatAdd = [];
   let i = 0;
   isGameOver = false;
+  isGamePause = false;
   sec = 0;
   min = 0;
-
+  for (let time of timer) {
+    time.innerHTML = "Time: 00:00";
+  }
   while (sponImgs.length != numsThatAdd.length) {
     let num1 = getRandomIntInclusive(0, 15);
     let num2 = getRandomIntInclusive(0, 15);
@@ -67,7 +72,7 @@ const newGame = () => {
 const boxClick = () => {
   for (let box of boxs) {
     box.addEventListener("click", () => {
-      if (box.firstChild.style.display != "block") {
+      if (box.firstChild.style.display != "block" && !isGamePause) {
         box.firstChild.style.display = "block";
         twoImg.push(box.firstChild);
         if (twoImg.length == 2) {
@@ -97,12 +102,15 @@ const checkTwoImg = (arr) => {
 // Reset the game by display the finishDiv and call newGame function
 const restartFunc = () => {
   let finishDiv = document.querySelector("#finishDiv");
-  if (finishDiv) {
+  let pauseDiv = document.querySelector("#pauseDiv");
+  if (finishDiv && pauseDiv) {
     finishDiv.style.display = "none";
+    pauseDiv.style.display = "none";
   }
   newGame();
 }
 
+// active finishDiv
 const gameOver = () => {
   let finishDiv = document.querySelector("#finishDiv");
   if (finishDiv) {
@@ -111,9 +119,10 @@ const gameOver = () => {
   isGameOver = true;
 }
 
+// Timer
 const setTimer = (timerArr) => {
   setInterval(() => {
-    if (!isGameOver) {
+    if (!isGameOver && !isGamePause) {
       sec++;
       if (sec == 60) {
         min++;
@@ -138,13 +147,34 @@ const setTimer = (timerArr) => {
 // Load website
 window.addEventListener("load", () => {
   init();
-  let restartBtn = document.querySelector("#restartBtn");
-  let timer = document.querySelectorAll("#timer");
+  let restartBtn = document.querySelectorAll(".restartBtn");
+  let timer = document.querySelectorAll(".timer");
+  let pauseBtn = document.querySelector("#pauseBtn");
+  let resumeBtn = document.querySelector("#resumeBtn");
+  let pauseDiv = document.querySelector("#pauseDiv");
 
   if (restartBtn) {
-    restartBtn.addEventListener("click", restartFunc)
+    for (let item of restartBtn) {
+      item.addEventListener("click", restartFunc)
+    }
   }
   if (timer) {
     setTimer(timer)
+  }
+  if (pauseBtn) {
+    pauseBtn.addEventListener("click", () => {
+      if (pauseDiv) {
+        pauseDiv.style.display = "block";
+        isGamePause = true;
+      }
+    })
+  }
+  if (resumeBtn) {
+    resumeBtn.addEventListener("click", () => {
+      if (pauseDiv) {
+        pauseDiv.style.display = "none";
+        isGamePause = false;
+      }
+    })
   }
 });
