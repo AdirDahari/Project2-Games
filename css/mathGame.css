@@ -152,3 +152,60 @@ body {
 .container-finish div:hover {
   box-shadow: 0px 0px 5px 5px #020202;
 }
+
+@media (max-width: 800px) {
+  .container-start {
+    width: 100vw;
+  }
+  .container-start h1 {
+    font-size: 2rem;
+  }
+  .container-start p {
+    font-size: 1.5rem;
+  }
+  .container-start .difficulty {
+    width: 100%;
+  }
+  .container-start .difficulty div {
+    font-size: 1.1rem;
+  }
+  .container-game {
+    width: 100vw;
+  }
+  .container-game h1 {
+    font-size: 2rem;
+  }
+  .container-game .bar {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+  .container-game .question-div {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .container-game .question-div #sendBtn {
+    width: 80px;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 2;
+  }
+  .container-game .question-div #questionId {
+    font-size: 1.3rem;
+  }
+  .container-game .question-div input {
+    width: 80px;
+    font-size: 1.3rem;
+    margin-left: 5px;
+  }
+  .material-symbols-outlined {
+    scale: 1;
+    margin-left: 5px;
+  }
+  .container-finish {
+    width: 100vw;
+  }
+  .container-finish h1 {
+    font-size: 2.5rem;
+  }
+}
