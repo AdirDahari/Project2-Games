@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+.game-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.3rem;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+}
+.game-wrapper > div {
+  width: 100%;
+  height: 100%;
+  background-color: #478ea3;
+  font-size: 5em;
+  text-align: center;
+  overflow: hidden;
+  line-height: 2;
+  font-family: "Mooli", sans-serif;
+}
+.game-wrapper > div:hover {
+  box-shadow: 0 0 5px 5px #a0cbd8;
+  border: 0.5px solid #9493e6;
+}
+.play-again-div {
+  width: 120px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "Mooli", sans-serif;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 0 auto;
+  background-color: rgb(172, 35, 214);
+  text-align: center;
+  transition: 0.1 ease-in-out all;
+}
+.play-again-div:hover {
+  box-shadow: 0 0 5px 5px #f589e3;
+}
+
+@media (max-width: 630px) {
+  .game-wrapper {
+    width: 95vw;
+    height: 500px;
+  }
+}
