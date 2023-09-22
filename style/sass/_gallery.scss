@@ -1,0 +1,101 @@
+.gallery {
+  width: 60vw;
+  margin: 0 auto;
+
+  h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Heebo", sans-serif;
+    font-weight: 900;
+    padding-top: 100px;
+  }
+
+  .projects {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cards {
+      cursor: pointer;
+      margin: 20px;
+      display: block;
+      width: 350px;
+      height: 500px;
+      background-color: #fff7ec;
+      border-radius: 20px;
+      text-decoration: none;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .imgBox {
+        width: 350px;
+        height: 200px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+
+        img {
+          width: 350px;
+          height: 200px;
+          transition: 0.5s ease-in-out;
+        }
+      }
+
+      h4 {
+        font-family: "Satisfy", cursive;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px;
+        color: #000;
+      }
+
+      p {
+        font-family: "Heebo", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+        color: #000;
+      }
+
+      div {
+        background-color: #a7e0e9;
+        width: 150px;
+        margin: 0 auto;
+        border-radius: 20px;
+
+        p {
+          text-align: center;
+          font-family: "Heebo", sans-serif;
+          font-size: 1rem;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.gallery .projects .cards:hover .imgBox img {
+  scale: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    width: 100vw;
+  }
+
+  .projects {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .projects {
+    flex-direction: column;
+  }
+}

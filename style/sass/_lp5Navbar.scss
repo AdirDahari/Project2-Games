@@ -1,0 +1,34 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: 70px;
+    background-color: rgba(115, 145, 200, .9);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.navbar div {
+    width: $contentWidth;
+    margin: 0 auto;
+}
+
+.navbar div a {
+    height: 65px;
+    color: #000;
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-family: 'Satisfy', cursive;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+@media (max-width:1200px) {
+    .navbar div {
+        width: 80vw;
+    }
+}

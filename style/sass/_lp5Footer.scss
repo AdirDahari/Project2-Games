@@ -1,0 +1,40 @@
+footer {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(115, 145, 200, .9);
+}
+
+footer div {
+    width: 160px;
+    height: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer div a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer div a img {
+    padding-left: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+footer div a img:hover {
+    scale: 1.1;
+}
+
+footer p {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}

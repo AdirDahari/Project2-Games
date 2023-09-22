@@ -2,14 +2,14 @@
 const boxs = document.querySelectorAll(".box");
 const sponImgs = document.querySelectorAll(".sponImg");
 const imgs = [
-  "./img/img1.png",
-  "./img/img2.png",
-  "./img/img3.png",
-  "./img/img4.png",
-  "./img/img5.png",
-  "./img/img6.png",
-  "./img/img7.png",
-  "./img/img8.png",
+  "./img/Project2Images/memoryGameImg1.png",
+  "./img/Project2Images/memoryGameImg2.png",
+  "./img/Project2Images/memoryGameImg3.png",
+  "./img/Project2Images/memoryGameImg4.png",
+  "./img/Project2Images/memoryGameImg5.png",
+  "./img/Project2Images/memoryGameImg6.png",
+  "./img/Project2Images/memoryGameImg7.png",
+  "./img/Project2Images/memoryGameImg8.png",
 ];
 let twoImg = [];
 let openCards = 0;

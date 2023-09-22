@@ -1,0 +1,56 @@
+section {
+    padding-top: 50px;
+    width: $width;
+    margin: 0 auto;
+    background-color: #fff7ec;
+    padding-bottom: 50px;
+
+    .sectionBox {
+        margin: 0 auto;
+        width: $contentWidth;
+
+        div {
+            width: 124px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            direction: rtl;
+            padding-top: 10px;
+            line-height: 2;
+        }
+
+        .cv {
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #a7e0e9;
+
+            p {
+                font-size: 1.0rem;
+                font-weight: bold;
+                font-family: 'Heebo', sans-serif;
+                text-decoration: none;
+                direction: rtl;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    section .sectionBox {
+        width: 80vw;
+    }
+}

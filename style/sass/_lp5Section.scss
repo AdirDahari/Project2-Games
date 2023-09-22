@@ -1,0 +1,129 @@
+section {
+    margin: 150px auto;
+    width: $contentWidth;
+    position: relative;
+}
+
+section .text {
+    width: $contentWidth;
+}
+
+section .text img {
+    width: $contentWidth;
+}
+
+section .text h2 {
+    position: absolute;
+    width: 20vw;
+    top: 15%;
+    right: 30%;
+    color: #fdba21;
+    font-size: 1.6rem;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+section .text p {
+    position: absolute;
+    width: 20vw;
+    top: 30%;
+    right: 30%;
+    color: #fdba21;
+    font-size: 1rem;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+
+section form {
+    width: $contentWidth;
+    margin: 50px auto;
+    direction: rtl;
+}
+
+section form input {
+    width: 10vw;
+    padding: 10px;
+    margin-left: 30px;
+    border: 0;
+    border-bottom: 5px solid #fc0;
+}
+
+section form label {
+    margin-left: 10px;
+    font-family: 'Heebo', sans-serif;
+}
+
+@media (max-width:1400px) {
+    section {
+        width: 80vw;
+    }
+
+    section .text {
+        width: 80vw;
+    }
+
+    section .text img {
+        width: 80vw;
+    }
+
+    section .text h2 {
+        width: 40vw;
+        top: 15%;
+        right: 25%;
+        font-size: 1.2rem;
+    }
+
+    section .text p {
+        width: 40vw;
+        top: 30%;
+        right: 25%;
+        font-size: .9rem;
+    }
+
+    section form {
+        width: 80vw;
+    }
+}
+
+@media (max-width:550px) {
+    section {
+        width: 90vw;
+    }
+
+    section .text {
+        width: 90vw;
+    }
+
+    section .text img {
+        width: 90vw;
+    }
+
+    section .text h2 {
+        width: 60vw;
+        top: 3%;
+        right: 18%;
+        font-size: 1rem;
+    }
+
+    section .text p {
+        width: 60vw;
+        top: 9%;
+        right: 18%;
+        font-size: .9rem;
+    }
+
+    section form {
+        width: 90vw;
+    }
+
+    section form label {
+        margin-right: 45%;
+    }
+
+    section form input {
+        width: 300px;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+}

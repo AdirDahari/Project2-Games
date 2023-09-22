@@ -52,26 +52,26 @@ const search = async (input) => {
 const setIcons = (weather) => {
     let weatherToReturn;
     const iconsDay = [
-        "./img/01d.png",
-        "./img/02d.png",
-        "./img/03d.png",
-        "./img/04d.png",
-        "./img/09d.png",
-        "./img/10d.png",
-        "./img/11d.png",
-        "./img/13d.png",
-        "./img/50d.png",
+        "./img/Project2Images/01d.png",
+        "./img/Project2Images/02d.png",
+        "./img/Project2Images/03d.png",
+        "./img/Project2Images/04d.png",
+        "./img/Project2Images/09d.png",
+        "./img/Project2Images/10d.png",
+        "./img/Project2Images/11d.png",
+        "./img/Project2Images/13d.png",
+        "./img/Project2Images/50d.png",
     ];
     const iconsNight = [
-        "./img/01n.png",
-        "./img/02n.png",
-        "./img/03d.png",
-        "./img/04n.png",
-        "./img/09n.png",
-        "./img/10d.png",
-        "./img/11d.png",
-        "./img/13d.png",
-        "./img/50n.png",
+        "./img/Project2Images/01n.png",
+        "./img/Project2Images/02n.png",
+        "./img/Project2Images/03d.png",
+        "./img/Project2Images/04n.png",
+        "./img/Project2Images/09n.png",
+        "./img/Project2Images/10d.png",
+        "./img/Project2Images/11d.png",
+        "./img/Project2Images/13d.png",
+        "./img/Project2Images/50n.png",
     ];
     switch (weather) {
         case "01d":   // Day

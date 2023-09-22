@@ -1,0 +1,105 @@
+.navBar {
+    width: $width;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 247, 236, .9);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    z-index: 1;
+
+    .navBox {
+        width: 1200px;
+        margin: 0 auto;
+
+        ul {
+            direction: rtl;
+            list-style-type: none;
+
+            li a {
+                color: #000;
+                width: 120px;
+                font-family: 'Heebo', sans-serif;
+                font-size: $navFont;
+                text-align: center;
+                text-decoration: none;
+                float: right;
+                display: block;
+                padding-top: 20px;
+                transition: 0.2s ease-in-out;
+
+                &:hover {
+                    color: #a7e0e9;
+                    font-weight: bold;
+                    scale: 1.1;
+                }
+            }
+        }
+
+        .contant {
+
+            a {
+                height: 65px;
+                color: #000;
+                display: block;
+                float: left;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-family: 'Satisfy', cursive;
+                padding-left: 10px;
+                overflow: hidden;
+            }
+        }
+
+    }
+}
+
+#name {
+    padding-top: 20px;
+}
+
+.hamburger {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    direction: rtl;
+    line-height: 1.5;
+    padding: 10px;
+    font-size: 2rem;
+    display: none;
+    font-weight: bold;
+    z-index: -1;
+    color: #58c1d1;
+
+    &:hover+ul {
+        display: block;
+    }
+}
+
+@media (max-width:1200px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        width: 100vw;
+        background-color: rgba(255, 247, 236, .9);
+        height: 200px;
+
+        li a {
+            clear: both;
+        }
+    }
+
+    .contant {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width:576px) {
+    #name {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+#top {
+    width: $width;
+    height: 410px;
+    background-color: #a7e0e9;
+
+    .topBox {
+        margin: 0 auto;
+        width: $contentWidth;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 50px;
+        margin-top: 65px;
+
+        h1 {
+            font-size: 4rem;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 900;
+        }
+
+        p {
+            direction: rtl;
+            width: $contentWidth;
+            font-size: 1.1rem;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    #top .topBox h1 {
+        font-size: 2.5rem;
+    }
+
+    #top .topBox {
+        width: 80vw;
+    }
+
+    #top .topBox p {
+        width: 80vw;
+    }
+}

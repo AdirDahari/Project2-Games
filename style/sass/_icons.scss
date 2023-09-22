@@ -1,0 +1,56 @@
+.icons {
+  width: 100vw;
+  background-color: #fff7ec;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  .iconsBox {
+    margin: 0 auto;
+    width: $contentWidth;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 75px;
+      height: 70px;
+      overflow: hidden;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      a img:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+#htmlIcon {
+  width: 65px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+#cssIcon {
+  width: 52px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+#sassIcon {
+  width: 72px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+#bootstrapIcon {
+  width: 72px;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+@media (max-width: 960px) {
+  .icons .iconsBox {
+    width: 80vw;
+  }
+}
