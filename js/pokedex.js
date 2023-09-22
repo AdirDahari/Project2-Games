@@ -1,3 +1,5 @@
+let lastElm;
+
 const getAllPokemons = async () => {
     try {
         let response = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=150&offset=0");
@@ -85,6 +87,9 @@ const setCard = (name, img, typeArr, statsArr) => {
     if (container) {
         container.appendChild(cardElm);
     }
+    cardElm.firstElementChild.addEventListener("click", () => {
+        rotateCard(cardElm.firstElementChild);
+    })
 }
 
 const setColor = (name) => {
@@ -123,6 +128,20 @@ const setColor = (name) => {
             return "#c83349";
         case "ghost":
             return "#d6d4e0";
+    }
+}
+
+const rotateCard = (elm) => {
+    if (!lastElm) {
+        elm.style.transform = "rotateY(180deg)";
+        lastElm = elm;
+    }
+    else if (lastElm && lastElm !== elm) {
+        lastElm.style.transform = "rotateY(0deg)";
+        elm.style.transform = "rotateY(180deg)";
+        lastElm = elm;
+    } else if (lastElm === elm) {
+        elm.style.transform = "rotateY(0deg)";
     }
 }
 

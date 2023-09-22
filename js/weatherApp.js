@@ -27,7 +27,7 @@ const search = async (input) => {
             temp.innerHTML = "temp: " + Math.round(response.data.main.temp) + "&#8451";
             feels_like.innerHTML = "feels like: " + Math.round(response.data.main.feels_like) + "&#8451";
             humidity.innerHTML = "humidity " + response.data.main.humidity + "%";
-            wind_speed.innerHTML = "wind speed: " + Math.round(response.data.wind.speed * 2) + " k/h";
+            wind_speed.innerHTML = "wind speed: " + (Math.round(response.data.wind.speed * 1.6)) + " k/h";
             description.innerHTML = response.data.weather[0].description;
         }
     }
