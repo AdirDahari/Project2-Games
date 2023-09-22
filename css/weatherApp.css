@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Mooli", sans-serif;
+  color: #ddfff4;
+  margin: 100px auto;
+  width: 600px;
+  border-radius: 30px;
+  background-color: rgba(41, 94, 192, 0.726);
+}
+
+.search-bar {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+.search-bar input {
+  background-color: rgba(41, 94, 192, 0.726);
+  font-family: "Mooli", sans-serif;
+  color: #ddfff4;
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+.search-bar button {
+  background-color: rgba(41, 94, 192, 0.726);
+  font-family: "Mooli", sans-serif;
+  color: #ddfff4;
+  width: 75px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50px;
+}
+.icon {
+  width: 200px;
+  margin: 50px auto;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.icon img {
+  width: 95%;
+  height: 95%;
+}
+.content {
+  margin: 10px auto;
+  width: 60%;
+  padding-bottom: 50px;
+}
+.content h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.content p {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.content #temp {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 750px) {
+  .container {
+    margin: 20px auto;
+    width: 100vw;
+  }
+  .content {
+    width: 90%;
+  }
+}

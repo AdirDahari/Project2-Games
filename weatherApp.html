@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather App</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./css/weatherApp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="search-bar">
         <input id="inputTxt" type="text" placeholder="city name" />
-        <button id="inputBtn">search</button>
+        <button id="inputBtn"><i class="fa fa-search"></i></button>
       </div>
-    </div>
-    <div class="content">
-      <h2 id="name">Israel</h2>
-      <p id="temp">temp:</p>
-      <p id="feels_like">feel like:</p>
-      <p id="humidity">humidity:</p>
-      <p id="wind_speed">wind speed:</p>
-      <p id="description"></p>
+
+      <div class="content">
+        <div class="icon">
+          <img id="iconImg" src="" alt="testWeather" />
+        </div>
+        <h2 id="name">City</h2>
+        <p id="temp"></p>
+        <p id="feels_like">feel like:</p>
+        <p id="humidity">humidity:</p>
+        <p id="wind_speed">wind speed:</p>
+        <p id="description">description</p>
+      </div>
     </div>
     <script src="./js/weatherApp.js"></script>
   </body>

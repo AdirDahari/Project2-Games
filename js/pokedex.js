@@ -142,6 +142,7 @@ const rotateCard = (elm) => {
         lastElm = elm;
     } else if (lastElm === elm) {
         elm.style.transform = "rotateY(0deg)";
+        lastElm = null;
     }
 }
 

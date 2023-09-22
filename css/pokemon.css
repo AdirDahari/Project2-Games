@@ -26,7 +26,7 @@ h1 {
   width: 250px;
   height: 350px;
   position: relative;
-  transition: 1.5s;
+  transition: 1.2s;
   transform-style: preserve-3d;
 }
 
@@ -37,6 +37,7 @@ h1 {
   position: absolute;
   backface-visibility: hidden;
   font-size: 1.3rem;
+  transition: 0.5s all ease-in-out;
 }
 .card-front {
   background-color: rgba(74, 85, 231, 0.5);
@@ -45,9 +46,21 @@ h1 {
   padding: 20px;
 }
 
+.card-front:hover {
+  box-shadow: 0px 0px 5px 5px #332775;
+}
+.card-front:hover img {
+  scale: 1.1;
+}
+
+.card-back:hover {
+  box-shadow: 0px 0px 5px 5px #752727;
+}
+
 img {
   width: 200px;
   height: 200px;
+  transition: 0.5s all ease-in-out;
 }
 
 .card-back {
