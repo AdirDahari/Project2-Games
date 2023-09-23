@@ -36,7 +36,7 @@ const search = async (input) => {
     }
     catch (err) {
         if (name && temp && feels_like && humidity && wind_speed && description) {
-            iconImg.src = "./img/InvalidIcon.png";
+            iconImg.src = "./img/Project2Images/InvalidIcon.png";
             name.innerHTML = "Invalid input";
             temp.innerHTML = "... " + "&#8451";
             feels_like.innerHTML = "feels like: "
